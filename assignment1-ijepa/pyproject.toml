@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ijepa-learning-assignment"
+version = "0.1.0"
+description = "A from-scratch I-JEPA learning assignment"
+requires-python = ">=3.10"
+dependencies = ["torch>=2.0", "pytest>=7.0"]
+
+[tool.setuptools]
+packages = ["ijepa_student"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
